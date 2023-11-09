@@ -1,0 +1,79 @@
+html {
+  overflow-x: hidden;
+}
+
+#roleta {
+  position: relative;
+  width: calc(100vw - 64px);
+  height: calc(100vw - 64px);
+  max-width: 500px;
+  max-height: 500px;
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#roleta .spinBtn {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  border-radius: 50%;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+}
+
+#roleta .spinBtn::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  width: 20px;
+  height: 30px;
+  background-color: white;
+  clip-path: polygon(50% 0%, 15% 100%, 85% 100%);
+}
+
+#roleta .wheel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #333;
+  box-shadow: 0 0 0 5px #333, 0 0 0 15px #fff, 0 0 0 18px #111;
+  overflow: hidden;
+  border-radius: 100%;
+  transition: transform 3s ease-in-out;
+}
+
+#roleta .wheel .number {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  background: linear-gradient(90deg, #2937f0, #9f1ae2);
+  transform-origin: bottom right;
+  transform: rotate(calc(60deg * var(--i)));
+  clip-path: polygon(0 0, 72% 0, 100% 100%, 0 72%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#roleta .wheel .number span {
+  color: white;
+  font-weight: 600;
+  font-size: 1.3rem;
+  font-family: 'Kanit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', 'Noto Color Emoji' !important;
+  position: relative;
+  transform: rotate(45deg);
+  text-align: center;
+}
