@@ -81,6 +81,9 @@
 *::after {
   box-sizing: border-box;
 }
+.food-icon{
+  width: 64px;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   :root {
