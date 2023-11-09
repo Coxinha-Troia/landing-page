@@ -81,7 +81,7 @@
 *::after {
   box-sizing: border-box;
 }
-.food-icon{
+.food-icon {
   width: 64px;
 }
 
@@ -680,4 +680,8 @@ section.cta:before {
   background-color: #f8f9fa;
   padding-top: 9.5rem;
   padding-bottom: 5rem;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link.active {
+  color: #2937f0;
 }
