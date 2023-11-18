@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Mulish:wght@500&family=Newsreader:opsz,wght@6..72,600&display=swap');
+
 :root {
   --bs-blue: #2937f0;
   --bs-indigo: #6610f2;
@@ -654,7 +656,7 @@ section {
 
 section.cta {
   position: relative;
-  background-image: url('../assets/img/coxinha.jpg');
+  background-image: url('../assets/img/coxinha.webp');
   background-position: center;
   background-size: cover;
 }
