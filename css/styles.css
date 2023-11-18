@@ -564,7 +564,7 @@ button:not(:disabled),
 
 .text-muted {
   --bs-text-opacity: 1;
-  color: #6c757d !important;
+  color: #6a737b !important;
 }
 
 .text-white-50 {
