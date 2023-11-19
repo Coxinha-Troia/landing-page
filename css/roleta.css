@@ -59,8 +59,8 @@ html {
   height: 50%;
   background: linear-gradient(90deg, #2937f0, #9f1ae2);
   transform-origin: bottom right;
-  transform: rotate(calc(60deg * var(--i)));
-  clip-path: polygon(0 0, 72% 0, 100% 100%, 0 72%);
+  transform: rotate(calc(45deg * var(--i)));
+  clip-path: polygon(0 0, 58% 0, 100% 100%, 0 58%);
   display: flex;
   justify-content: center;
   align-items: center;

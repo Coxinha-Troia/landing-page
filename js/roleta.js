@@ -1,12 +1,14 @@
 const roleta = document.querySelector('.wheel');
 const btnGirar = document.querySelector('.spinBtn');
 const opcoes = [
-  'Coxinha',
-  'Pastel',
-  `Empada`,
-  `Você escolhe`,
-  `Rabo de tatu`,
-  `+1 salgado`,
+  'Nada',
+  '-1 salgado',
+  '+2 salgados',
+  '-1 salgado',
+  'Nada',
+  '-2 salgados',
+  '+1 salgado',
+  '-1 salgado',
 ];
 
 function adicionarOpcao(opcao, index) {
@@ -21,9 +23,11 @@ function adicionarOpcao(opcao, index) {
   roleta.appendChild(divElement);
 }
 
+let oldValue = 0;
 function sortear() {
   const value = Math.ceil(Math.random() * 360 * 7) + 360 * 3;
-  roleta.style.transform = `rotate(${value}deg)`;
+  roleta.style.transform = `rotate(${oldValue + value}deg)`;
+  oldValue += value;
 }
 
 opcoes.map(adicionarOpcao);
