@@ -6,9 +6,9 @@ const opcoes = [
   '+2 salgados',
   '-1 salgado',
   'Nada',
-  '-2 salgados',
+  '+1 Giro',
   '+1 salgado',
-  '-1 salgado',
+  '-2 salgados',
 ];
 
 function adicionarOpcao(opcao, index) {
