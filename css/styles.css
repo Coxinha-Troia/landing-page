@@ -576,6 +576,10 @@ button:not(:disabled),
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-black-rgb), var(--bs-bg-opacity)) !important;
 }
+
+#price {
+  font-weight: bolder;
+}
 @media (min-width: 768px) {
   .mb-md-0 {
     margin-bottom: 0 !important;
@@ -613,7 +617,7 @@ html {
 }
 
 .bg-gradient-primary-to-secondary {
-  background: linear-gradient(45deg, #2937f0, #9f1ae2) !important;
+  background: linear-gradient(45deg, #dd1323, #FFC300) !important;
 }
 
 .font-alt {
@@ -623,7 +627,7 @@ html {
 }
 
 .text-gradient {
-  background: -webkit-linear-gradient(#2937f0, #9f1ae2);
+  background: -webkit-linear-gradient(#dd1323, #FFC300);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -685,7 +689,7 @@ section.cta:before {
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active {
-  color: #2937f0;
+  color: #dd1323;
 }
 
 #cardapio h2 {
