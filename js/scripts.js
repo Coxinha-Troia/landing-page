@@ -34,7 +34,8 @@ window.addEventListener('DOMContentLoaded', event => {
     let buttonPay = document.getElementById('pay');
     const copyContent = () => {
         navigator.clipboard.writeText('00020126360014br.gov.bcb.pix0114+55849984029465204000053039865802BR5925David Emanoel Da Silva Sa6009Sao Paulo62170513SalgadosTroia63042DAF')
-            .then( () => alert('PIX copia e Cola copiado para a área de transferência'));
+            .then( () => alert('PIX copia e Cola copiado para a área de transferência com sucesso. Cole no App do seu banco e realize o pagamento! 🤩🤩🤩'))
+            .catch(() => alert('Ooops... 😭😭 Parece que o link não foi copiado, tente novamente!'));
     }
     buttonPay.addEventListener('click', copyContent);
 });
