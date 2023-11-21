@@ -77,3 +77,21 @@ html {
   transform: rotate(45deg);
   text-align: center;
 }
+
+@media (min-width: 425px) {
+  #roleta .wheel .number span {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 375px) {
+  #roleta .wheel .number span {
+    font-size: .9rem;
+  }
+}
+
+@media (min-width: 320px) {
+  #roleta .wheel .number span {
+    font-size: .8rem;
+  }
+}
