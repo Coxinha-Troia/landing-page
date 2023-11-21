@@ -31,4 +31,10 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
+    let buttonPay = document.getElementById('pay');
+    const copyContent = () => {
+        navigator.clipboard.writeText('00020126360014br.gov.bcb.pix0114+55849984029465204000053039865802BR5925David Emanoel Da Silva Sa6009Sao Paulo62170513SalgadosTroia63042DAF')
+            .then( () => alert('PIX copia e Cola copiado para a área de transferência'));
+    }
+    buttonPay.addEventListener('click', copyContent);
 });
