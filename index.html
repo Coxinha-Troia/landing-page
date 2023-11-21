@@ -51,7 +51,7 @@
               <a class="nav-link me-lg-3" href="#cardapio">Cardápio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link me-lg-3" href="#pedido">Faça seu pedido</a>
+              <a class="nav-link me-lg-3" href="#roulette">Girar roleta</a>
             </li>
           </ul>
         </div>
@@ -65,12 +65,14 @@
             <!-- Mashead text and app badges-->
             <div class="mb-5 mb-lg-0 text-center text-lg-start">
               <h3 class="display-3 lh-1 mb-3">
-                Vai uma <span class="text-gradient">coxinha</span> ai(ou não)?
+                Vai uma <span class="text-gradient">coxinha</span> aí (ou não)?
               </h3>
               <p class="lead fw-normal text-muted mb-5">
-                Experimente testar sua sorte em nossa roleta e tenha surpresas
-                inesperadas por apenas 🔥<span class="text-gradient" id="price">RS 1,00</span> !
+                Faça um pedido normal ou teste sua sorte em nossa roleta e tenha <a class="b-roulette" href="#roulette">
+                  surpresas inesperadas
+                </a> por apenas 🔥RS 1,00!
               </p>
+              <a href="#cardapio" class="b-pay">Fazer pedido</a>
             </div>
           </div>
           <div class="col-lg-6">
@@ -191,19 +193,26 @@
                   </div>
                 </div>
               </div>
+              <div class="row justify-content-center">
+                <div class="col-sm-12 col-md-8 col-xl-6 tester">
+                  <p id="b-title">6 Salgados + Refri por <span class="text-gradient">RS6,00</span></p>
+                  <button class="b-pay" id="pay">Pedir 😋😋</button>
+                  <a href="#roulette" id="b-subtitle" class="text-muted">...ou teste sua sorte na roleta</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
     <!-- Call to action section-->
-    <section class="cta" id="pedido">
+    <section class="cta" id="roulette">
       <div class="cta-content">
         <div
           class="container d-flex justify-content-center flex-column align-items-center"
         >
-          <h2 class="text-white display-3 mb-2">Faça seu pedido!</h2>
-          <p class="text-white mb-5 text-center">
+          <h2 class="text-white display-3 mb-2">TróiaBet</h2>
+          <p class="text-white mb-5 text-center" id="r-subtitle" >
             Por apenas 🔥<span class="text-gradient" id="price">RS 1,00</span> gire a roleta e tente a sorte na quantidade de salgados!
           </p>
           <div id="roleta">

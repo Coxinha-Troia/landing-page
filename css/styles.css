@@ -192,12 +192,12 @@ svg {
   vertical-align: middle;
 }
 
-button {
+button, .b-pay {
   border-radius: 0;
 }
 
 input,
-button,
+button, .b-pay,
 select,
 optgroup,
 textarea {
@@ -207,18 +207,18 @@ textarea {
   line-height: inherit;
 }
 
-button,
+button, .b-pay,
 select {
   text-transform: none;
 }
 
-button,
+button, .b-pay,
 [type='button'],
 [type='reset'],
 [type='submit'] {
   -webkit-appearance: button;
 }
-button:not(:disabled),
+button, .b-pay:not(:disabled),
 [type='button']:not(:disabled),
 [type='reset']:not(:disabled),
 [type='submit']:not(:disabled) {
@@ -612,6 +612,52 @@ html {
   scroll-padding-top: 4.5rem;
 }
 
+#r-subtitle {
+  font-size: 1.2rem;
+}
+
+.tester {
+  margin-top: 64px;
+  padding-top: 32px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#b-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #212529;
+}
+#b-subtitle {
+  padding-top: 16px;
+  margin: 0px !important;
+  text-decoration: none;
+}
+
+.b-pay {
+  border: none;
+  border-radius: 8px;
+  font-weight: bolder;
+  background-color: var(--bs-orange);
+  color: var(--bs-light);
+  height: 48px;
+  min-width: 180px;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.b-roulette {
+  border-radius: 8px;
+  text-decoration:none;
+  font-weight: bolder;
+  color: var(--bs-orange);
+}
 .bg-black {
   background-color: #000 !important;
 }
